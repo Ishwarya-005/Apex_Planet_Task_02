@@ -1,0 +1,139 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #A7C7E7;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  margin: 0;
+  flex-direction: column;
+  padding: 30px;
+}
+
+h2 {
+  color: #333;
+  text-align: center;
+  width: 100%;
+}
+
+form {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  margin: 0 auto 40px auto;
+}
+
+label {
+  font-size: 16px;
+  color: #555;
+  display: block;
+  margin-bottom: 5px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 30px;
+  border: none;
+  margin-bottom: 10px;
+  box-shadow: 1px 2px 5px gray;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+input::placeholder {
+  color: #aaa;
+  padding-left: 10px;
+}
+
+.error {
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px;
+  border-radius: 30px;
+  width: 100%;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 1px 2px 5px gray;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.task-container {
+  background-color: #fff;
+  width: 400px;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+}
+
+.task-container input[type="text"] {
+  width: 80%;
+  padding: 10px;
+  margin-right: 10px;
+  border-radius: 30px;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+}
+
+.task-container button {
+  padding: 10px 15px;
+  border-radius: 30px;
+  border: none;
+  background-color: #4CAF50;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.task-container button:hover {
+  background-color: #45a049;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 20px 0 0;
+}
+
+li {
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f9f9f9;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+li.completed {
+  text-decoration: line-through;
+  color: gray;
+}
+
+.remove-btn {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.remove-btn:hover {
+  background-color: #e53935;
+}
+
