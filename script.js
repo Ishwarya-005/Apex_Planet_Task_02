@@ -4,6 +4,7 @@ function validateForm(event) {
   document.getElementById('nameError').textContent = '';
   document.getElementById('ageError').textContent = '';
   document.getElementById('phoneError').textContent = '';
+  document.getElementById('messageError').textContent = '';
 
   const name = document.getElementById('name').value;
   if (!/^[a-zA-Z]+$/.test(name)) {
@@ -20,6 +21,12 @@ function validateForm(event) {
   const phone = document.getElementById('phone').value;
   if (!/^\d{10}$/.test(phone)) {
     document.getElementById('phoneError').textContent = 'Phone number must be 10 digits';
+    isValid = false;
+  }
+
+  const message = document.getElementById('message').value.trim();
+  if (message === '') {
+    document.getElementById('messageError').textContent = 'Please enter a message';
     isValid = false;
   }
 
@@ -58,3 +65,4 @@ addTaskButton.addEventListener('click', function () {
     });
   }
 });
+

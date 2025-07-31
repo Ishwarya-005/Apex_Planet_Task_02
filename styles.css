@@ -32,7 +32,7 @@ label {
   margin-bottom: 5px;
 }
 
-input {
+input, textarea {
   width: 100%;
   padding: 10px;
   border-radius: 30px;
@@ -43,7 +43,14 @@ input {
   box-sizing: border-box;
 }
 
-input::placeholder {
+textarea {
+  resize: vertical;
+  height: 80px;
+  border-radius: 15px;
+}
+
+input::placeholder,
+textarea::placeholder {
   color: #aaa;
   padding-left: 10px;
 }
@@ -51,7 +58,8 @@ input::placeholder {
 .error {
   color: red;
   font-size: 12px;
-  margin-top: 5px;
+  margin-top: -5px;
+  margin-bottom: 10px;
 }
 
 button {
@@ -136,4 +144,5 @@ li.completed {
 .remove-btn:hover {
   background-color: #e53935;
 }
+
 

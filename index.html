@@ -5,7 +5,7 @@
 </head>
 <body>
 
-  <h2>Registration Form</h2>
+  <h2>Contact Form</h2>
   <form id="registrationForm" onsubmit="return validateForm(event)">
     <label for="name">Name:</label>
     <input type="text" id="name" name="name" placeholder="Enter your name">
@@ -18,6 +18,10 @@
     <label for="phone">Phone Number:</label>
     <input type="text" id="phone" name="phone" placeholder="Enter your phone number">
     <div id="phoneError" class="error"></div>
+
+    <label for="message">Message:</label>
+    <textarea id="message" name="message" placeholder="Enter your message here"></textarea>
+    <div id="messageError" class="error"></div>
 
     <button type="submit">Submit</button>
   </form>
